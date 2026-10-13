@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f5f7fa"><title>幣日子｜加密貨幣單人模擬交易</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="app-shell" id="appShell">
+    <aside class="sidebar">
+      <a class="brand" href="#market"><span class="brand-mark">幣</span><span><b>幣日子</b><small>加密貨幣單人模擬交易</small></span></a>
+      <div class="nav-label">個人交易室</div>
+      <nav id="navigation">
+        <button class="nav-item active" data-page="market"><span>◫</span>市場總覽</button>
+        <button class="nav-item" data-page="portfolio"><span>▤</span>我的持股</button>
+        <button class="nav-item" data-page="orders"><span>⌁</span>限價委託</button>
+        <button class="nav-item" data-page="history"><span>↻</span>交易紀錄</button>
+        <button class="nav-item" data-page="settings"><span>⚙</span>遊戲設定</button>
+        <button class="nav-item" data-page="guide"><span>?</span>新手指南</button>
+      </nav>
+      <div class="sidebar-note"><span class="dot"></span>單人練習模式<small>所有資金均為虛擬</small></div>
+      <div class="sidebar-footer">資料儲存於此瀏覽器</div>
+    </aside>
+    <main class="main-area">
+      <header class="topbar"><div class="mobile-brand"><span class="brand-mark">幣</span><b>幣日子</b></div><div class="topbar-spacer"></div><div class="mode-pill"><span class="dot"></span>個人模擬帳戶</div><button id="resetBtn" class="icon-button" title="重置遊戲">↻</button></header>
+      <section id="app" class="page-content"></section>
+      <footer class="disclaimer">所有資金與交易結果均為模擬。行情來源：Binance 官方公開現貨 API，可能延遲或不完整；只供遊戲參考。遊戲不連接帳戶或送出真實委託。</footer>
+    </main>
+  </div>
+  <div id="toast" class="toast" role="status"></div>
+  <div id="modalRoot"></div>
+  <script src="./app.js"></script>
+</body>
+</html>
+
